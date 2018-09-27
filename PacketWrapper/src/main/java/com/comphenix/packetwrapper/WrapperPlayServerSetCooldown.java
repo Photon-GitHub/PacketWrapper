@@ -43,13 +43,14 @@ public class WrapperPlayServerSetCooldown extends AbstractPacket {
 
 	public Material getItem() {
 		return handle.getModifier()
-				.<Material> withType(ITEM_CLASS, new ItemConverter()).read(0);
+					 .withType(ITEM_CLASS, new ItemConverter())
+                     .read(0);
 	}
 
 	public void setItem(Material value) {
 		handle.getModifier()
-				.<Material> withType(ITEM_CLASS, new ItemConverter())
-				.write(0, value);
+              .withType(ITEM_CLASS, new ItemConverter())
+              .write(0, value);
 	}
 
 	public int getTicks() {
