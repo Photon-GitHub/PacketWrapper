@@ -20,6 +20,7 @@ package com.comphenix.packetwrapper;
 
 import java.lang.reflect.InvocationTargetException;
 
+import com.google.common.base.Preconditions;
 import org.bukkit.entity.Player;
 
 import com.comphenix.protocol.PacketType;
@@ -39,12 +40,8 @@ public abstract class AbstractPacket {
 	 */
 	protected AbstractPacket(PacketContainer handle, PacketType type) {
 		// Make sure we're given a valid packet
-		if (handle == null)
-			throw new IllegalArgumentException("Packet handle cannot be NULL.");
-		if (!Objects.equal(handle.getType(), type))
-			throw new IllegalArgumentException(handle.getHandle()
-					+ " is not a packet of type " + type);
-
+		Preconditions.checkNotNull(handle, "Packet handle cannot be NULL.");
+        Preconditions.checkArgument(Objects.equal(handle.getType(), type), handle.getHandle() + " is not a packet of type " + type);
 		this.handle = handle;
 	}
 
