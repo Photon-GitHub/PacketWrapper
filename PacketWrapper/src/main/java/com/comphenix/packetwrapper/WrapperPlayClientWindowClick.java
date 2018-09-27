@@ -143,6 +143,6 @@ public class WrapperPlayClientWindowClick extends AbstractPacket {
 	}
 
 	public enum InventoryClickType {
-		PICKUP, QUICK_MOVE, SWAP, CLONE, THROW, QUICK_CRAFT, PICKUP_ALL;
-	}
+		PICKUP, QUICK_MOVE, SWAP, CLONE, THROW, QUICK_CRAFT, PICKUP_ALL
+    }
 }

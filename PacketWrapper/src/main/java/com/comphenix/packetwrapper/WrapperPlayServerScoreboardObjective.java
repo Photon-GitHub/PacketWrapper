@@ -135,6 +135,6 @@ public class WrapperPlayServerScoreboardObjective extends AbstractPacket {
 	}
 
 	public static enum HealthDisplay {
-		INTEGER, HEARTS;
+		INTEGER, HEARTS
 	}
 }

@@ -61,6 +61,6 @@ public class WrapperPlayClientRecipeDisplayed extends AbstractPacket {
 
     public enum Status {
         SHOWN,
-        SETTINGS;
+        SETTINGS
     }
 }

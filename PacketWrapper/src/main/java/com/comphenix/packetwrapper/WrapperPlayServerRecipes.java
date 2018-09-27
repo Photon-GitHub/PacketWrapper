@@ -93,6 +93,6 @@ public class WrapperPlayServerRecipes extends AbstractPacket {
     public enum Action {
         INIT,
         ADD,
-        REMOVE;
+        REMOVE
     }
 }

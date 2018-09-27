@@ -124,10 +124,10 @@ public class WrapperPlayServerBoss extends AbstractPacket {
 	}
 
 	public static enum Action {
-        ADD, REMOVE, UPDATE_PCT, UPDATE_NAME, UPDATE_STYLE, UPDATE_PROPERTIES;
+        ADD, REMOVE, UPDATE_PCT, UPDATE_NAME, UPDATE_STYLE, UPDATE_PROPERTIES
 	}
 
 	public static enum BarStyle {
-		PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20;
+		PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
 	}
 }

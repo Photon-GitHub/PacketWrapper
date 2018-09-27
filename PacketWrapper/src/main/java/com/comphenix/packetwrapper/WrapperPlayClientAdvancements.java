@@ -72,6 +72,6 @@ public class WrapperPlayClientAdvancements extends AbstractPacket {
 
     public enum Status {
         OPENED_TAB,
-        CLOSED_SCREEN;
+        CLOSED_SCREEN
     }
 }
