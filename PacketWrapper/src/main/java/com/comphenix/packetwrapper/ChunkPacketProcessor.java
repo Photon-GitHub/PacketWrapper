@@ -163,8 +163,8 @@ public class ChunkPacketProcessor {
 		 * @param data - the data array.
 		 * @param offsets - the offsets with the data for the given chunklet.
 		 */
-		public void processChunklet(Location origin, byte[] data,
-				ChunkOffsets offsets);
+		void processChunklet(Location origin, byte[] data,
+							 ChunkOffsets offsets);
 
 		/**
 		 * Process the biome array for a chunk (16x256x16).
@@ -178,8 +178,8 @@ public class ChunkPacketProcessor {
 		 * @param biomeIndex - the starting index of the biome data (256 bytes
 		 *        in lenght).
 		 */
-		public void processBiomeArray(Location origin, byte[] data,
-				int biomeIndex);
+		void processBiomeArray(Location origin, byte[] data,
+							   int biomeIndex);
 	}
 
 	// Useful Minecraft constants
