@@ -123,11 +123,11 @@ public class WrapperPlayServerBoss extends AbstractPacket {
 		handle.getBooleans().write(2, value);
 	}
 
-	public static enum Action {
+	public enum Action {
         ADD, REMOVE, UPDATE_PCT, UPDATE_NAME, UPDATE_STYLE, UPDATE_PROPERTIES
 	}
 
-	public static enum BarStyle {
+	public enum BarStyle {
 		PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
 	}
 }

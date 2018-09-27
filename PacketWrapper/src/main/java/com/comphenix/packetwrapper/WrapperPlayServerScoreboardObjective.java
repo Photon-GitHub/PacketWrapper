@@ -134,7 +134,7 @@ public class WrapperPlayServerScoreboardObjective extends AbstractPacket {
 		handle.getIntegers().write(0, value);
 	}
 
-	public static enum HealthDisplay {
+	public enum HealthDisplay {
 		INTEGER, HEARTS
 	}
 }
