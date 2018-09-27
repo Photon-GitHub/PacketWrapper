@@ -41,22 +41,6 @@ public class WrapperPlayServerAbilities extends AbstractPacket {
 		handle.getBooleans().write(0, value);
 	}
 
-	/**Misspelled.
-	 * @see #isInvulnerable()
-	 */
-	@Deprecated
-	public boolean isInvulnurable() {
-		return handle.getBooleans().read(0);
-	}
-
-	/**Misspelled.
-	 * @see #setInvulnerable(boolean)
-	 */
-	@Deprecated
-	public void setInvulnurable(boolean value) {
-		handle.getBooleans().write(0, value);
-	}
-
 	public boolean isFlying() {
 		return handle.getBooleans().read(1);
 	}
