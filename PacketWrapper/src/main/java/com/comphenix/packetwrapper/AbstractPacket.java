@@ -62,8 +62,7 @@ public abstract class AbstractPacket {
 	 */
 	public void sendPacket(Player receiver) {
 		try {
-			ProtocolLibrary.getProtocolManager().sendServerPacket(receiver,
-					getHandle());
+			ProtocolLibrary.getProtocolManager().sendServerPacket(receiver, getHandle());
 		} catch (InvocationTargetException e) {
 			throw new RuntimeException("Cannot send packet.", e);
 		}
@@ -84,8 +83,7 @@ public abstract class AbstractPacket {
 	 */
 	public void receivePacket(Player sender) {
 		try {
-			ProtocolLibrary.getProtocolManager().recieveClientPacket(sender,
-					getHandle());
+			ProtocolLibrary.getProtocolManager().recieveClientPacket(sender, getHandle());
 		} catch (Exception e) {
 			throw new RuntimeException("Cannot receive packet.", e);
 		}
